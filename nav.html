@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav_style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar-->
+        <div class="navbar">
+            <div class="logo"> <img src="logo.png" alt=""></a></div>
+            <ul class="links">
+                <li><a href="nav.html">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+            <a href="#explore" class="action_btn">Get Started</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+
+        <div class="dropdown_menu">
+                <li><a href="nav.html">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#explore" class="action_btn">Get Started</a></li>
+                
+        </div>
+
+
+
+    </header>
+
+    <!-- Title of website-->
+    <main>
+        <section id="hero">
+            <h1>Speech Recognition</h1>
+            <h3>The Bridge Between Speech and Text.</h3>
+            <p>Capture your ideas the moment they strike!<br> Our speech recognition software keeps pace with your thoughts.</p>
+            <a href="#explore" class="expbtn">Explore</a>
+        </section>
+    </main>
+
+    <!-- TTS and STT modules -->
+    
+    <div class="module_heading">
+        <h2>Don't Just Write, Speak. Don't Just Read, Listen.</h2>
+    </div>
+    
+    <div class="explore" id="explore">
+
+        
+        
+        <div class="tts">
+            <a href=""><h1>Text to speech</h1></a>
+            <p>Experience seamless accessibility with our new Text-to-Speech<br>feature! Transform written content into lifelike speech with just a <br>click, enhancing user engagement and inclusivity on our <br>website.</p>
+            <button class="start expbtn" onclick="text_to_speech()" >Try yourself</button>
+        </div>
+        
+        <div class="stt">
+            <a href=""><h1>Speech to Text</h1></a>
+            <p>Experience seamless accessibility on our website with our cutting-edge speech-to-text feature. Simply speak, and let your words transform effortlessly into text, making navigation and interaction easier than ever before.</p>
+            <button class="start expbtn" onclick="speech_to_text()">Try yourself</button>
+        </div>
+    </div>
+    
+
+    <!-- More Features of website-->
+    <div class="features" id="features">
+        <h1>More features about Speech You'll Love!</h1>
+        <div class="table-box">
+            <div class="table-row">
+                <div class="table-cell">
+                    <h4>On-Demand STT and TTS Conversion</h4>
+                </div>
+                <div class="table-cell">
+                    <p>You can access modules at any time 
+                        to convert spoken language to text and vice versa whenever needed.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <h4>Free audio file download</h4>
+                </div>
+                <div class="table-cell">
+                    <p>We offer you with our free text to speech online converter you can type a file and convert it to speech. 
+                        You can then download it as an audio file to
+                         use as a voice over or for any other applications.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <h4>Variations in voices</h4>
+                </div>
+                <div class="table-cell">
+                    <p>Want to get high quality voices? No worries we have given options 
+                        for variety of voices provided by microsoft.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <h4>Multilingual Support</h4>
+                </div>
+                <div class="table-cell">
+                    <p>We support a wide range of languages 
+                        to cater you from diverse cultural backgrounds, 
+                        enabling effective communication across borders.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <h4>User Reviews and Testimonials</h4>
+                </div>
+                <div class="table-cell">
+                    <p>You can share your experience and 
+                        testimonials to build trust and credibility, 
+                        showcasing the effectiveness and reliability of the speech recognition technology.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <h4>User's Feedback</h4>
+                </div>
+                <div class="table-cell">
+                    <p>Incorporate a feedback system where yos can submit your suggestions, report issues, 
+                        and provide feedback on their experience with the speech recognition service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Review section-->
+    <!--6 users opinions-->
+    <h1 class="reviewheading"  id="reviews">Some online Reviews</h1>
+        <!--users review-->
+        <div class="specialuser">
+            <div class="userbox">
+                <div class="qtanddis">
+                    <div class="quote"></div>
+                    <p>I used to hate school because I’d spend hours just trying to read the assignments. Listening has been totally life changing. This app saved my education.</p>
+                </div><br><br><hr>
+                <div class="userdiv">
+                    <div class="userphoto"></div>
+                    <div class="username">
+                        <div class="name">Ana</div>
+                        <span>Student with Dyslexia</span>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!--2nd box-->
+            <div class="userbox">
+                <div class="qtanddis">
+                    <div class="quote"></div>
+                    <p>This Speech Recognition website has made my editing so much faster and easier when I’m writing. I can hear an error and fix it right away. Now I can’t write without it.</p>
+                </div><br><br><hr>
+                <div class="userdiv">
+                    <div class="userphoto"></div>
+                    <div class="username">
+                        <div class="name">Danial</div>
+                        <span>Writer</span>
+                    </div>
+                </div>
+                
+            </div>
+            <!--3rd box-->
+            <div class="userbox">
+                <div class="qtanddis">
+                    <div class="quote"></div>
+                    <p>It just makes reading so much easier. English is my second language and listening while I follow along in a book has seriously improved my skills.</p>
+                </div><br><br><hr>
+                <div class="userdiv">
+                    <div class="userphoto"></div>
+                    <div class="username">
+                        <div class="name">Lou</div>
+                        <span>Avid Reader</span>
+                    </div>
+                </div>
+                
+            </div>
+            <!--4rth box-->
+            <div class="userbox">
+                <div class="qtanddis">
+                    <div class="quote"></div>
+                    <p>We had a great time collabrating with AI recognition website. They have my high recommendation!</p>
+                </div><br><br><hr>
+                <div class="userdiv">
+                    <div class="userphoto"></div>
+                    <div class="username">
+                        <div class="name">Max</div>
+                        <span>Engineer</span>
+                    </div>
+                </div>
+                
+            </div>
+            <!--5th box-->
+            <div class="userbox">
+                <div class="qtanddis">
+                    <div class="quote"></div>
+                    <p>This website has drastically improved our user experience and increased our business outreach!</p>
+                </div><br><br><hr>
+                <div class="userdiv">
+                    <div class="userphoto"></div>
+                    <div class="username">
+                        <div class="name">Natasha</div>
+                        <span>Employee</span>
+                    </div>
+                </div>
+                
+            </div>
+            <!--6th box-->
+            <div class="userbox">
+                <div class="qtanddis">
+                    <div class="quote"></div>
+                    <p>I absolutely loved working with this website. Complete experts at what this can do!!!</p>
+                </div><br><br><hr>
+                <div class="userdiv">
+                    <div class="userphoto"></div>
+                    <div class="username">
+                        <div class="name">Tony</div>
+                        <span>Blogger</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    <!-- About us section-->
+    <div class="aboutus" id="aboutus">
+        <div class="aboutwebsite">
+            <div class="abt-content ">
+                <h1>About Us</h1>
+                <p>We are a team of passionate engineers at building innovative speech and text recognition technologies. Our mission is to bridge the communication gap between humans and machines by creating user-friendly and intelligent AI products.<br>
+                    We believe that speech and text recognition has the potential to revolutionize the way we interact with technology, and we are committed to developing cutting-edge solutions that push the boundaries of what's possible.
+                     <br>
+                    Our team is comprised of experts in various fields, including speech processing, natural language processing, machine learning, and artificial intelligence. We are constantly working on improving our technology and expanding our capabilities to meet the ever-growing needs of our users.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsive toggle button-->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownmenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function(){
+            dropDownmenu.classList.toggle('open')
+
+            const isOpen = dropDownmenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+        function text_to_speech() {
+            window.location.href = 'text-to-sp.html';
+        }
+        function speech_to_text() {
+            window.location.href = 'speech-to-text.html';
+        }
+
+
+    </script>
+
+    
+</body>
+</html>

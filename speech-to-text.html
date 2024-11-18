@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <link rel="stylesheet" type="text/css" href="speech-to-text.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Speech to Text <span>Converter</span></h1>
+
+        <button id="startBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop Recording</button><br>
+        <div class="speechBoxes">
+            <textarea id="output" placeholder="Spoken text will appear here..." readonly></textarea>
+            <textarea id="translatedOutput" placeholder="Translated text will appear here..." readonly></textarea>
+        </div>
+        <div class="actionBtns">
+            <button id="translateBtn" style="display: none;">Translate Text</button>
+            <select name="languageDropDown" id="languageDropDown" style="display: none;"></select>
+            <button id="downloadBtn" style="display: none;">Download Translated Text</button>
+        </div>
+
+    </div>
+    <script src="speech-to-text.js"></script>
+</body>
+
+</html>

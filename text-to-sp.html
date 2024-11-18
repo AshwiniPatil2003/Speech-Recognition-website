@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech Converter</title>
+    <link rel="stylesheet" href="text-to-sp-style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Text to Speech <span>Converter</span></h1>
+        <textarea placeholder="Write anything here..."></textarea>
+        <div class="row">
+            <select></select>
+            <select name="select-languages" id="select-languages"></select>
+            <button>Listen</button>
+            <a id="download-link" href=""></a>
+        </div>
+    </div>
+    <script defer src="text-to-sp.js"></script>
+    <script defer type="text/javascript"
+        src="https://unpkg.com/speech-synthesis-recorder@1.2.1/SpeechSynthesisRecorder.js"></script>
+</body>
+
+</html>

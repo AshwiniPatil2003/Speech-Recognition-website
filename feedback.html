@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Suggestions</title>
+    <link rel="stylesheet" href="feedback_style (1).css">
+</head>
+<body>
+    <div class="heading">
+    <h1>Feedback & Suggestions</h1>
+    </div>
+    <main>
+        <div class="container">
+            <form action="" id="feedback-form">
+                <label for="name">Name:</label><br><br>
+                <input type="text" id="name" placeholder="Your name.." >
+                <label for="email">Email:</label><br><br>
+                <input type="email" id="email" placeholder="Your email.." >
+                <label for="feedback">Feedback/Suggestions:</label><br><br>
+                <textarea id="feedback" placeholder="Your feedback and suggestions.."  rows="4"></textarea>
+                <button type="submit" id="submit" value="submit" placeholder="Submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    
+    
+    <script type="module"> 
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
+
+        // web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyDNSMfzsqTrIWICsDSu5HccLmJKUixM7yI",
+        authDomain: "feedback-8eeeb.firebaseapp.com",
+        projectId: "feedback-8eeeb",
+        storageBucket: "feedback-8eeeb.appspot.com",
+        messagingSenderId: "572836417621",
+        appId: "1:572836417621:web:661bd7ba9663cc328a84dc"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+
+        //get ref to database 
+        const db = getDatabase(app);
+
+        document.getElementById("submit").addEventListener('click', function(e){
+            e.preventDefault();
+
+            set(ref(db, 'user/' +document.getElementById("name").value),
+        {
+            username: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("feedback").value
+        });
+        alert("Your feedback is submitted successfully!");
+        })
+    </script>
+</body>
+</html>
